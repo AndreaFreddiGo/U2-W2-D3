@@ -1,4 +1,4 @@
-// creo lo stile per i miei button
+// creo lo stile per i miei button con un mixin ed il colore che va preso da una map (lista di chiavi-valori)
 @mixin button($color) {
   border: 3px solid $color;
   border-radius: 100px;
@@ -10,9 +10,10 @@
   font-size: $button-font-size;
 }
 
-// genero dinamicamente le 3 classi di bottoni a partire dai colori
-@each $color in $button-colors {
-  .button-#{$color} {
-    @include;
+// // genero dinamicamente le 3 classi di bottoni a partire dai colori con un ciclo che prende il colore e lo va ad inserire nel
+// mixin in modo ciclico quando lo invoca, e usa il nome del colore da inserire nella creazione del nome della classe
+@each $name, $color in $button-colors {
+  .button-#{$name} {
+    @include button($color);
   }
 }

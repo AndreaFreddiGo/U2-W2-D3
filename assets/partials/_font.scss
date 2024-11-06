@@ -11,6 +11,7 @@ $h1-font-size: 3rem;
 @mixin h1-style {
   font-size: $h1-font-size;
   color: #cf649a;
+  margin: 20px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;

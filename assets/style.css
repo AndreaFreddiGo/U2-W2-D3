@@ -129,6 +129,42 @@ table {
   border-spacing: 0;
 }
 
+.button-blue {
+  border: 3px solid #0e6cff;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #a7c9ff;
+  color: #002d74;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.button-orange {
+  border: 3px solid #ff8700;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #ffcf99;
+  color: #663600;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.button-green {
+  border: 3px solid #4caf50;
+  border-radius: 100px;
+  padding: 10px;
+  margin: 10px;
+  background-color: #b5dfb7;
+  color: #1e441f;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+body {
+  margin: 0 5%;
+}
 body nav {
   text-align: center;
   height: 75px;
@@ -140,6 +176,7 @@ body nav {
 @media screen and (min-width: 576px) {
   body nav {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 body nav ul {
@@ -162,16 +199,21 @@ body nav img {
 h1 {
   font-size: 3rem;
   color: #cf649a;
+  margin: 20px;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
 }
 
-section > div {
+section div {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-section > div img {
-  max-width: 50%;
+section div img {
+  max-width: 20%;
+  margin: 2%;
+}
+section div p {
+  width: 50%;
 }/*# sourceMappingURL=style.css.map */
