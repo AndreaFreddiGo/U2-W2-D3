@@ -138,6 +138,7 @@ table {
   color: #002d74;
   font-weight: 700;
   font-size: 1.5rem;
+  transition: 1s;
 }
 
 .button-orange {
@@ -149,6 +150,7 @@ table {
   color: #663600;
   font-weight: 700;
   font-size: 1.5rem;
+  transition: 1s;
 }
 
 .button-green {
@@ -160,18 +162,24 @@ table {
   color: #1e441f;
   font-weight: 700;
   font-size: 1.5rem;
+  transition: 1s;
 }
 
 body {
   margin: 0 5%;
+  background-color: #640fc5;
 }
 body nav {
   text-align: center;
-  height: 75px;
-  width: 100%;
+  min-height: 75px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
 }
 @media screen and (min-width: 576px) {
   body nav {
@@ -185,15 +193,21 @@ body nav ul {
   list-style-type: none;
   display: flex;
   flex-direction: column;
+  font-size: 1.6rem;
+  color: #cf649a;
 }
 @media screen and (min-width: 576px) {
   body nav ul {
     flex-direction: row;
   }
 }
+body nav ul li {
+  padding-left: 10px;
+  padding-top: 10px;
+}
 body nav img {
-  height: 40px;
-  width: 40px;
+  height: 60px;
+  width: 60px;
 }
 
 h1 {
@@ -210,10 +224,36 @@ section div {
   justify-content: center;
   align-items: center;
 }
+section div button:hover {
+  padding: 13px;
+  opacity: 70%;
+  color: #640fc5;
+}
 section div img {
   max-width: 20%;
   margin: 2%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  border: 3px solid transparent;
+}
+section div #hero-img {
+  max-width: 50%;
+  margin: 2%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
 }
 section div p {
   width: 50%;
+  color: white;
+  line-height: 2rem;
+  font-size: 1.8rem;
+}
+
+#secondSection {
+  margin: 2%;
+  border-radius: 20px;
+  box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.5);
+  border: 3px solid white;
+  background-color: white;
 }/*# sourceMappingURL=style.css.map */

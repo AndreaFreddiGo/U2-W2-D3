@@ -8,6 +8,7 @@
   color: darken($color, 30%);
   font-weight: 700;
   font-size: $button-font-size;
+  transition: 1s;
 }
 
 // // genero dinamicamente le 3 classi di bottoni a partire dai colori con un ciclo che prende il colore e lo va ad inserire nel

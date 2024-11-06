@@ -9,13 +9,16 @@
 
 body {
   margin: 0 5%;
+  background-color: $bg-hero-color;
   nav {
     text-align: center;
-    height: 75px;
-    width: 100%;
+    min-height: 75px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 20px;
+    background-color: white;
+    @include floating(white);
     @media screen and (min-width: 576px) {
       flex-direction: row;
       justify-content: space-between;
@@ -26,13 +29,19 @@ body {
       list-style-type: none;
       display: flex;
       flex-direction: column;
+      font-size: $li-font-size;
+      color: #cf649a;
       @media screen and (min-width: 576px) {
         flex-direction: row;
       }
+      li {
+        padding-left: 10px;
+        padding-top: 10px;
+      }
     }
     img {
-      height: 40px;
-      width: 40px;
+      height: 60px;
+      width: 60px;
     }
   }
 }
@@ -45,11 +54,33 @@ section div {
   display: flex;
   justify-content: center;
   align-items: center;
+  button {
+    &:hover {
+      padding: 13px;
+      opacity: 70%;
+      color: $bg-hero-color;
+    }
+  }
   img {
     max-width: 20%;
     margin: 2%;
+    @include floating(transparent);
+  }
+  #hero-img {
+    max-width: 50%;
+    margin: 2%;
+    @include floating(white);
   }
   p {
     width: 50%;
+    color: white;
+    line-height: 2rem;
+    font-size: $p-font-size;
   }
+}
+
+#secondSection {
+  margin: 2%;
+  @include floating(white);
+  background-color: white;
 }
