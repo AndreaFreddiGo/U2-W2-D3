@@ -1,0 +1,17 @@
+// inserisco il font-family
+$font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+// creo varibili per le diverse dimensioni del font
+$button-font-size: 1.5rem;
+$p-font-size: 1.2rem;
+$li-font-size: 1.1rem;
+$h1-font-size: 3rem;
+
+// creo mixin per il titolo
+@mixin h1-style {
+  font-size: $h1-font-size;
+  color: #cf649a;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}

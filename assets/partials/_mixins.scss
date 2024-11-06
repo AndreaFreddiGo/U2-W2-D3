@@ -1,0 +1,8 @@
+// creo mixin
+@mixin h1-style {
+  font-size: $h1-font-size;
+  color: #cf649a;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}

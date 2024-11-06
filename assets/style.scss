@@ -1,0 +1,49 @@
+// importo i file partials
+@import './partials/reset';
+@import './partials/mixins';
+@import './partials/spacings';
+@import './partials/colors';
+@import './partials/font';
+@import './partials/animations';
+@import './partials/buttons';
+
+body {
+  nav {
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media screen and (min-width: 576px) {
+      flex-direction: row;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      @media screen and (min-width: 576px) {
+        flex-direction: row;
+      }
+    }
+    img {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+h1 {
+  @include h1-style();
+}
+
+section > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  img {
+    max-width: 50%;
+  }
+}
